@@ -27,7 +27,7 @@ The script makes use of the following dependencies, which are to be installed by
       $ pip install -r requirements.txt
       $ pip install -e gym-easy21
       ```
-The `gym-easy21` environment is OpenAI Gym compatible. You can create an instance of the it with:
+The `gym-easy21` environment is OpenAI Gym compatible. You can create an instance of it with:
       ```python
       gym.make('gym_easy21:easy21-v0')
       ```
