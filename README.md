@@ -8,20 +8,32 @@ The script makes use of the following dependencies, which are to be installed by
 - [dill](https://pypi.org/project/dill/)
 - [pandas](https://pypi.org/project/pandas/)
 - [seaborn](https://pypi.org/project/seaborn/)
-
 - [OpenAI Gym](https://github.com/openai/gym)
 
 ### Installation
-The environment is OpenAI Gym compatible. To install it, you need to run:
-```
-$ pip install -e gym-foo
-```
-Then, you can create an instance of the environment with:
-```python
-gym.make('gym_easy21:easy21-v0')
-```
-### run
+1. Create a virtual environment:
+
+      ```
+      $ virtualenv pyeasy21
+      ```
+2. Activate the virtual environment:
+
+      ```
+      $ source pyeasy21/bin/activate
+      ```
+3. Install all the dependencies necessary for running RL algorithms and plot results:
+
+      ```
+      $ pip install -r requirements.txt
+      $ pip install -e gym-easy21
+      ```
+The `gym-easy21` environment is OpenAI Gym compatible. You can create an instance of the it with:
+      ```python
+      gym.make('gym_easy21:easy21-v0')
+      ```
+
+### Run
 The following scripts implements the 3 algorithms required by the assignment:
  - `mc.py`: Monte Carlo control
  - `sarsa_lambda.py`: TD Learning
- - `linear_approx.py`: Linear Function Approximation 
+ - `linear_approx.py`: Linear Function Approximation

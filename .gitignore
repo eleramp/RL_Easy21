@@ -9,7 +9,6 @@
 *.m~
 *.log
 *.log~
-*.prototxt~
 *.pt~
 *.txt~
 *.cpp~
@@ -40,9 +39,31 @@ Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
-*pycache*/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
 images/
+pyeasy21/
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# pyenv
+.python-version
 
 ########################################################
 # Windows Installer files
@@ -126,4 +147,3 @@ Temporary Items
 
 # OSX dir files
 .DS_Store
-
